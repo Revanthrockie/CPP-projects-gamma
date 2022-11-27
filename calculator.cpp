@@ -77,6 +77,29 @@ void sqroot()
    cout << "\n the Square root is: "<< sqrt(num1)<< endl;
  }
 
+void perc()
+{
+  int num,num2,per;
+
+  int n,sum = 0,i;
+  cout << "Enter how many numbers you want to enter: "<<endl;
+  cin>>n;
+  cout<<"Please enter the number one by one: \n";
+  for (size_t i = 1; i <= n; i++)
+  {
+    cin >> num;
+    sum = sum + num;
+  }
+
+  cout << "\n Enter the total number out of u want to find the percentage of:  ";
+  cin >> num2;
+
+  per = (sum*100)/num2;
+
+  cout<< "\n the Percentage is: " << per << "%" <<endl;
+
+}
+
 int main(){
   int opr;
 
@@ -88,7 +111,8 @@ int main(){
       << "3.Multiplication\n"
       << "4.Division,Modulous\n"
       << "5.Squareroot\n"
-      << "6.Exit\n"
+      << "6.Percentage\n"
+      << "7.Exit\n"
       << "\n\n Select from one option: "
       <<endl;
       cin >> opr;
@@ -116,6 +140,10 @@ int main(){
       break;
 
       case 6:
+        perc();
+      break;
+
+      case 7:
         exit(0);
       break;
 
@@ -124,7 +152,7 @@ int main(){
       break;
     }
 
- }while( opr != 6);
+ }while( opr != 7);
 
 
 
