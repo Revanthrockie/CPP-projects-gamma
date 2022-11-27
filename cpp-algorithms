@@ -1,0 +1,23 @@
+
+Algorithms for various problems...
+I'll be writing this as I learn new things along my way.
+
+
+1.Luhn Algorithms:
+ { *used for validating credit card numbers
+  For eg- 4093 0568 1173 9858
+  we make two parts the even places and the odd places
+  count the numbers from left to right starting from 0.
+
+  A. Starting from odd(right to left):
+  1. To get this number [n = number/100; n = n % 10].
+  2. Iterate the step-1 through entire card numbers.
+  3. Add all the numbers. [sum of all odd numbers = oddsum].
+
+  B. Starting from even(right to left):
+  1. to get these numbers [n = number/100]
+
+
+
+
+ }
