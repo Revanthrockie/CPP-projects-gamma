@@ -1,23 +1,49 @@
 
 Algorithms for various problems...
 I'll be writing this as I learn new things along my way.
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
 
-
-1.Luhn Algorithms:
- { *used for validating credit card numbers
+1.Luhn Algorithms or Module 10:
+  Used for validating credit card numbers
   For eg- 4093 0568 1173 9858
   we make two parts the even places and the odd places
   count the numbers from left to right starting from 0.
 
   A. Starting from odd(right to left):
-  1. To get this number [n = number/100; n = n % 10].
-  2. Iterate the step-1 through entire card numbers.
-  3. Add all the numbers. [sum of all odd numbers = oddsum].
+  1. Use Module on the card number with 10 (400129083 % 10 = 3)
+     now add this number to the sum.
+  2. To get the next digit divide the CC number
+     by 100(400129083 / 100 = 4001290).
+  3. Iterate this steps and add all these numbers to the sum.
+  4. Add all the numbers. [sum of all odd numbers = odd-sum].
+
+-------------------
 
   B. Starting from even(right to left):
-  1. to get these numbers [n = number/100]
+  1. Divide the card number by 100.
+  2. Use Module on the card number with 10
+     (card-e-num =400129083 % 10 = 3)
+  3. Now multiply card-e-num *= 2 (3 * 2 = 6).
+  4. If a number when multiplied with 2 gives u a two digit number
+     add those two numbers and save it to card-e-num(6 * 2 = 12 then
+     do 1 + 2= 3).
+     now add this number to the sum.
+  3. To get the next digit divide the CC number
+     by 100(40012908 / 100 = 400129).
+  4. Iterate theses steps and add all these numbers to the sum.
+  5. Add all the numbers. [sum of all even numbers = even-sum].
 
+--------------------------------------------------------------------------
+  Link : https://www.geeksforgeeks.org/luhn-algorithm
+--------------------------------------------------------------------------
 
+///////////////////////////////////////////////////////////////////////
 
-
- }
+2.Fibonacci series
