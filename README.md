@@ -11,5 +11,3 @@ What all this repo contains..
  a) Calculator
  b) Currency exchange
  c) Card-validator
-
- 

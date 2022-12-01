@@ -40,7 +40,7 @@ void div(){
   cout<< "\n enter the second number: ";
   cin >> num2;
   while(num2 == 0){
-    cout<<"\n the divisor cannot be 0... Please enter the divisor once again: ";
+    cout<<"\n the divisor cannot be 0.. Please enter the divisor once again: ";
     cin >> num2;
   }
   devis = num1/num2;
@@ -88,6 +88,8 @@ void sqroot()
    cout << "\n the Square root is: "<< sqrt(num1)<< endl;
  }
 
+// Function for finding percentage
+
 void percentage()
 {
   int option;
@@ -109,9 +111,10 @@ void percentage()
       cout<< "Enter the percentage value: ";
       cin>> percentagevalue;
 
-      result00 = number00 * (percentagevalue/100);
+      result00 = (number00 * percentagevalue) / 100;
 
-      cout<< "The " << percentagevalue << "%\n" << "of " << number00 << "is" << ": "
+      cout<< "The " << percentagevalue << "%\n" << "of " << number00
+      << "is" << ": "
       << result00;
     break;
 
