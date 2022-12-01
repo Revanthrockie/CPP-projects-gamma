@@ -1,12 +1,14 @@
-<<<<<<< current
-// master card number
-=======
-// master card number - 5
-// visa card number - 4
+// master card starts with 50, 51, 52, 53, 54, 55, 56 and contains - 15 digits.
+// visa card starts with 4 and contains -13 or 15 digits.
+// American Express starts with eihter 43 or 37 and contains - 15 digits.
 
+// Use luhn algorithm for this projects.
+--------------------------------------------------------------------------------
 #include <iostream>
 using namespace std;
 #include <string>
+
+// main file
 
 int main()
 {
@@ -82,4 +84,3 @@ int main()
  }
 
 };
->>>>>>> before discard
